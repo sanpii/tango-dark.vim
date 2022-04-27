@@ -110,7 +110,7 @@ function load_syntax()
         Delimiter = { fg = c.yellow, style = 'bold' },
         SpecialComment = c.yellow,
         Debug = c.unset,
-        Underlined = { fg = c.light_blue, style = 'underline' },
+        Underlined = { fg = c.light_blue, style = 'underline', sp = c.light_blue },
         Ignore = c.unset,
         Error = 'DiagnosticError',
         Todo = { fg = c.light_yellow, bg = c.orange, style = 'bold' },
