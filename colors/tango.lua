@@ -105,7 +105,7 @@ function load_syntax()
         Structure = 'Identifier',
         Typedef = 'Type',
         Special = c.yellow,
-        SpecialChar = c.unset,
+        SpecialChar = c.purple,
         Tag = c.unset,
         Delimiter = { fg = c.yellow, style = 'bold' },
         SpecialComment = c.yellow,
