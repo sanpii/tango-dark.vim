@@ -1,16 +1,16 @@
 local c = {
     bg = "#000000",
-    blue = "#3464a4",
+    blue = "#3465a4",
     fg = "#ffffff",
     gray = "#262626",
-    green = "#4e9a05",
-    light_blue = "#719ecf",
+    green = "#4e9a06",
+    light_blue = "#729fcf",
     light_green = "#8ae234",
-    light_purple = "#ad7ea7",
-    light_yellow = "#fce94e",
+    light_purple = "#ad7fa8",
+    light_red = "#ef2929",
+    light_yellow = "#fce94f",
     orange = "#d75f00",
-    purple = "#74507a",
-    red = "#ef2828",
+    purple = "#75507b",
     unset = "#ff00ff",
     yellow = "#c4a000",
 }
@@ -26,8 +26,8 @@ function load_syntax()
         Cursor = { style = 'bold' },
         DiffAdd = { bg = c.green },
         DiffChange = { bg = c.gray },
-        DiffDelete = { bg = c.red },
-        DiffText = { bg = c.red },
+        DiffDelete = { bg = c.light_red },
+        DiffText = { bg = c.light_red },
         Directory = c.cyan,
         EndOfBuffer = c.bg,
         ErrorMsg = 'DiagnosticError',
@@ -55,7 +55,7 @@ function load_syntax()
         Search = { fg = c.fg, bg = c.light_green },
         SignColumn = { fg = c.fg, bg = c.bg },
         SpecialKey = 'NonText',
-        SpellBad = { style = 'undercurl', sp = c.red },
+        SpellBad = { style = 'undercurl', sp = c.light_red },
         SpellCap = { style = 'undercurl', sp = c.green },
         SpellLocal = {},
         SpellRare = {},
@@ -80,7 +80,7 @@ function load_syntax()
 
         -- syntax
         Comment = c.light_blue,
-        Constant = c.red,
+        Constant = c.light_red,
         String = c.light_purple,
         Character = 'String',
         Number = 'Constant',
@@ -95,8 +95,8 @@ function load_syntax()
         Operator = { fg = c.light_yellow, style = 'bold' },
         Keyword = { fg = c.light_yellow, style = 'bold' },
         Exception = 'Keyword',
-        PreProc = { fg = c.red, style = 'bold' },
-        Include = c.red,
+        PreProc = { fg = c.light_red, style = 'bold' },
+        Include = c.light_red,
         Define = 'PreProc',
         Macro = 'PreProc',
         PreCondit = 'Macro',
@@ -117,7 +117,7 @@ function load_syntax()
 
         -- gitsigns
         GitSignsAdd = c.green,
-        GitSignsDelete = c.red,
+        GitSignsDelete = c.light_red,
         GitSignsChange = c.yellow,
 
         -- LSP
@@ -129,15 +129,15 @@ function load_syntax()
         LspSignatureActiveParameter = 'DiagnosticWarn',
 
         -- Diagnostic
-        DiagnosticError = c.red,
+        DiagnosticError = c.light_red,
         DiagnosticWarn = c.yellow,
         DiagnosticInfo = c.blue,
         DiagnosticHint = c.green,
-        DiagnosticVirtualTextError = { fg = c.red, style = 'italic' },
+        DiagnosticVirtualTextError = { fg = c.light_red, style = 'italic' },
         DiagnosticVirtualTextWarn = { fg = c.yellow, style = 'italic' },
         DiagnosticVirtualTextInfo = { fg = c.blue, style = 'italic' },
         DiagnosticVirtualTextHint = { fg = c.green, style = 'italic' },
-        DiagnosticUnderlineError = { sp = c.red, style = 'undercurl' },
+        DiagnosticUnderlineError = { sp = c.light_red, style = 'undercurl' },
         DiagnosticUnderlineWarn = { sp = c.yellow, style = 'undercurl' },
         DiagnosticUnderlineInfo = { sp = c.blue, style = 'undercurl' },
         DiagnosticUnderlineHint = { sp = c.green, style = 'undercurl' },
@@ -150,8 +150,8 @@ function load_syntax()
         DiagnosticSignInfo = 'DiagnosticInfo',
         DiagnosticSignHint = 'DiagnosticHint',
 
-        htmlH2 = c.red,
-        htmlH1 = c.red,
+        htmlH2 = c.light_red,
+        htmlH1 = c.light_red,
     }
 end
 
