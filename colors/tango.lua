@@ -45,7 +45,7 @@ function load_syntax()
         NonText = c.gray,
         Normal = { fg = c.fg, bg = c.bg },
         NormalFloat = { fg = c.fg, bg = c.gray },
-        NormalNC = 'Normal',
+        NormalNC = {},
         Pmenu = { fg = c.fg, bg = c.gray },
         PmenuSbar = { bg = c.fg },
         PmenuSel = { fg = c.gray, bg = c.fg },
