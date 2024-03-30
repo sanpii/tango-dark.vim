@@ -48,7 +48,7 @@ function load_syntax()
         StatusLineNC = { fg = c.gray, bg = c.gray },
         Substitute = {},
         TabLineFill = c.gray,
-        TabLineSel = {},
+        TabLineSel = { fg = c.fg, bg = c.bg, style = 'bold' },
         TabLine = 'StatusLine',
         Title = c.fg,
         VertSplit = 'LineNrAbove',
