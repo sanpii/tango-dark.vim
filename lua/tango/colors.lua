@@ -4,6 +4,7 @@ function M.setup()
     return {
         bg = "#000000",
         blue = "#3465a4",
+        dark_green = "#356904",
         fg = "#ffffff",
         gray = "#262626",
         green = "#4e9a06",

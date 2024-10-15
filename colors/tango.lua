@@ -135,6 +135,45 @@ function load_syntax()
         DiagnosticSignInfo = 'DiagnosticInfo',
         DiagnosticSignHint = 'DiagnosticHint',
 
+        -- Cmp
+        CmpItemAbbrDeprecated = { fg = c.light_gray, style='strikethrough' },
+        CmpItemAbbrMatch = { fg = c.light_blue, style='bold' },
+        CmpItemAbbrMatchFuzzy = 'CmpItemAbbrMatch',
+        CmpItemMenu = { fg = c.purple, style='italic' },
+
+        CmpItemKindField = { fg = c.fg, bg = c.red },
+        CmpItemKindProperty = 'CmpItemKindField',
+        CmpItemKindEvent = 'CmpItemKindField',
+
+        CmpItemKindText = { fg = c.fg, bg = c.dark_green },
+        CmpItemKindEnum = 'CmpItemKindText',
+        CmpItemKindKeyword = 'CmpItemKindText',
+
+        CmpItemKindConstant = { fg = c.fg, bg = c.yellow },
+        CmpItemKindConstructor = 'CmpItemKindConstant',
+        CmpItemKindReference = 'CmpItemKindConstant',
+
+        CmpItemKindFunction = { fg = c.fg, bg = c.purple },
+        CmpItemKindStruct = 'CmpItemKindFunction',
+        CmpItemKindClass = 'CmpItemKindFunction',
+        CmpItemKindModule = 'CmpItemKindFunction',
+        CmpItemKindOperator = 'CmpItemKindFunction',
+
+        CmpItemKindVariable = { fg = c.fg, bg = c.light_gray },
+        CmpItemKindFile = 'CmpItemKindVariable',
+
+        CmpItemKindUnit = { fg = c.fg, bg = c.orange },
+        CmpItemKindSnippet = 'CmpItemKindUnit',
+        CmpItemKindFolder = 'CmpItemKindUnit',
+
+        CmpItemKindMethod = { fg = c.fg, bg = c.blue },
+        CmpItemKindValue = 'CmpItemKindMethod',
+        CmpItemKindEnumMember = 'CmpItemKindMethod',
+
+        CmpItemKindInterface = 'CmpItemKindInterface',
+        CmpItemKindColor = 'CmpItemKindInterface',
+        CmpItemKindTypeParameter = 'CmpItemKindInterface',
+
         htmlH2 = c.light_red,
         htmlH1 = c.light_red,
     }
