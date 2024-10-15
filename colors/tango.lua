@@ -91,7 +91,7 @@ function load_syntax()
         Typedef = 'Type',
         Special = c.yellow,
         SpecialChar = c.purple,
-        Tag = c.unset,
+        Tag = 'Keyword',
         Delimiter = { fg = c.yellow, style = 'bold' },
         SpecialComment = c.yellow,
         Debug = c.unset,
