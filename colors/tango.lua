@@ -114,10 +114,6 @@ function load_syntax()
         LspSignatureActiveParameter = 'DiagnosticWarn',
 
         -- Diagnostic
-        DiagnosticError = c.light_red,
-        DiagnosticWarn = c.yellow,
-        DiagnosticInfo = c.blue,
-        DiagnosticHint = c.green,
         DiagnosticVirtualTextError = { fg = c.light_red, style = 'italic' },
         DiagnosticVirtualTextWarn = { fg = c.yellow, style = 'italic' },
         DiagnosticVirtualTextInfo = { fg = c.blue, style = 'italic' },
