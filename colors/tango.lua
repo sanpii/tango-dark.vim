@@ -136,7 +136,7 @@ function load_syntax()
         CmpItemAbbrDeprecated = { fg = c.light_gray, style='strikethrough' },
         CmpItemAbbrMatch = { fg = c.light_blue, style='bold' },
         CmpItemAbbrMatchFuzzy = 'CmpItemAbbrMatch',
-        CmpItemMenu = { fg = c.purple, style='italic' },
+        CmpItemMenu = { fg = c.light_gray, style='italic' },
 
         CmpItemKindField = { fg = c.fg, bg = c.red },
         CmpItemKindProperty = 'CmpItemKindField',
