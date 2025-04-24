@@ -1,4 +1,4 @@
-local c = require 'tango.colors'.setup()
+local c = require 'tango-dark.colors'.setup()
 
 function load_syntax()
     return {
@@ -183,7 +183,7 @@ function colorscheme()
     end
     vim.o.background = 'dark'
     vim.o.termguicolors = true
-    vim.g.colors_name = 'tango'
+    vim.g.colors_name = 'tango-dark'
     local syntax = load_syntax()
     for group, colors in pairs(syntax) do
         if syntax[colors] then
