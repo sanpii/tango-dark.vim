@@ -1,25 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="450" height="240" fill="none">
-    <rect width="450" height="240" rx="5" fill="#000000"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="170">
+    <rect width="100%" height="100%" fill="#000000"/>
 
-    <circle cx="50" cy="50" r="30" fill="#262626"/>
-    <circle cx="50" cy="120" r="30" fill="#2E3436"/>
-    <circle cx="50" cy="190" r="30" fill="#FFFFFF"/>
+    <rect x="20" y="20" width="60" height="60" rx="5" fill="#262626"/>
+    <rect x="20" y="90" width="60" height="60" rx="5" fill="#2E3436"/>
 
-    <circle cx="120" cy="50" r="30" fill="#75507b"/>
-    <circle cx="120" cy="120" r="30" fill="#ad7fa8"/>
+    <rect x="90" y="20" width="60" height="60" rx="5" fill="#75507b"/>
+    <rect x="90" y="90" width="60" height="60" rx="5" fill="#ad7fa8"/>
 
-    <circle cx="190" cy="50" r="30" fill="#3465a4"/>
-    <circle cx="190" cy="120" r="30" fill="#729fcf"/>
+    <rect x="160" y="20" width="60" height="60" rx="5" fill="#3465a4"/>
+    <rect x="160" y="90" width="60" height="60" rx="5" fill="#729fcf"/>
 
-    <circle cx="260" cy="50" r="30" fill="#356904"/>
-    <circle cx="260" cy="120" r="30" fill="#4e9a06"/>
-    <circle cx="260" cy="190" r="30" fill="#8ae234"/>
+    <rect x="230" y="20" width="60" height="60" rx="5" fill="#06989a"/>
+    <rect x="230" y="90" width="60" height="60" rx="5" fill="#34e2e2"/>
 
+    <rect x="300" y="20" width="60" height="60" rx="5" fill="#4e9a06"/>
+    <rect x="300" y="90" width="60" height="60" rx="5" fill="#8ae234"/>
 
-    <circle cx="330" cy="50" r="30" fill="#fce94f"/>
-    <circle cx="330" cy="120" r="30" fill="#c4a000"/>
+    <rect x="370" y="20" width="60" height="60" rx="5" fill="#fce94f"/>
+    <rect x="370" y="90" width="60" height="60" rx="5" fill="#c4a000"/>
 
-    <circle cx="400" cy="50" r="30" fill="#d75f00"/>
-    <circle cx="400" cy="120" r="30" fill="#ef2929"/>
-    <circle cx="400" cy="190" r="30" fill="#CC0000"/>
+    <rect x="440" y="20" width="60" height="60" rx="5" fill="#ef2929"/>
+    <rect x="440" y="90" width="60" height="60" rx="5" fill="#CC0000"/>
 </svg>

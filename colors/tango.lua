@@ -13,7 +13,7 @@ function load_syntax()
         DiffChange = { bg = c.gray },
         DiffDelete = { bg = c.light_red },
         DiffText = { bg = c.light_red },
-        Directory = c.cyan,
+        Directory = c.light_blue,
         EndOfBuffer = c.bg,
         ErrorMsg = 'DiagnosticError',
         FoldColumn = {},
@@ -94,11 +94,12 @@ function load_syntax()
         Tag = 'Keyword',
         Delimiter = { fg = c.yellow, style = 'bold' },
         SpecialComment = c.yellow,
-        Debug = c.unset,
+        DebugPC = c.cyan,
+        DebugBreakpoint = 'DebugPC',
         Underlined = { fg = c.light_blue, style = 'underline', sp = c.light_blue },
-        Ignore = c.unset,
+        Ignore = {},
         Error = 'DiagnosticError',
-        Todo = { fg = c.light_yellow, bg = c.orange, style = 'bold' },
+        Todo = { fg = c.light_red, bg = c.light_yellow, style = 'bold' },
 
         -- gitsigns
         GitSignsAdd = c.green,
@@ -141,7 +142,7 @@ function load_syntax()
         CmpItemKindProperty = 'CmpItemKindField',
         CmpItemKindEvent = 'CmpItemKindField',
 
-        CmpItemKindText = { fg = c.fg, bg = c.dark_green },
+        CmpItemKindText = { fg = c.fg, bg = c.green },
         CmpItemKindEnum = 'CmpItemKindText',
         CmpItemKindKeyword = 'CmpItemKindText',
 
@@ -158,7 +159,7 @@ function load_syntax()
         CmpItemKindVariable = { fg = c.fg, bg = c.light_gray },
         CmpItemKindFile = 'CmpItemKindVariable',
 
-        CmpItemKindUnit = { fg = c.fg, bg = c.orange },
+        CmpItemKindUnit = { fg = c.fg, bg = c.cyan },
         CmpItemKindSnippet = 'CmpItemKindUnit',
         CmpItemKindFolder = 'CmpItemKindUnit',
 
