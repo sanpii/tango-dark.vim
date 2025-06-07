@@ -115,6 +115,10 @@ function load_syntax()
         LspSignatureActiveParameter = 'DiagnosticWarn',
 
         -- Diagnostic
+        DiagnosticError = { fg = c.light_red },
+        DiagnosticWarn = { fg = c.yellow },
+        DiagnosticInfo = { fg = c.blue },
+        DiagnosticHint = { fg = c.green },
         DiagnosticVirtualTextError = { fg = c.light_red, italic = true },
         DiagnosticVirtualTextWarn = { fg = c.yellow, italic = true },
         DiagnosticVirtualTextInfo = { fg = c.blue, italic = true },
@@ -123,14 +127,6 @@ function load_syntax()
         DiagnosticUnderlineWarn = { sp = c.yellow, undercurl = true },
         DiagnosticUnderlineInfo = { sp = c.blue, undercurl = true },
         DiagnosticUnderlineHint = { sp = c.green, undercurl = true },
-        DiagnosticFloatingError = 'DiagnosticError',
-        DiagnosticFloatingWarn = 'DiagnosticWarn',
-        DiagnosticFloatingInfo = 'DiagnosticInfo',
-        DiagnosticFloatingHint = 'DiagnosticHint',
-        DiagnosticSignError = 'DiagnosticError',
-        DiagnosticSignWarn = 'DiagnosticWarn',
-        DiagnosticSignInfo = 'DiagnosticInfo',
-        DiagnosticSignHint = 'DiagnosticHint',
 
         -- Cmp
         CmpItemAbbrDeprecated = { fg = c.light_gray, strikethrough = true },
