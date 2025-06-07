@@ -8,7 +8,7 @@ function load_syntax()
         CursorIM = 'Cursor',
         CursorLine = 'ColorColumn',
         CursorLineNr = 'CursorLine',
-        Cursor = { style = 'bold' },
+        Cursor = { bold = true },
         DiffAdd = { bg = c.green },
         DiffChange = { bg = c.gray },
         DiffDelete = { bg = c.light_red },
@@ -21,7 +21,7 @@ function load_syntax()
         IncSearch = { fg = c.gray, bg = c.green },
         LineNrAbove = c.gray,
         LineNrBelow = 'LineNrAbove',
-        LineNr = { fg = c.purple, style = 'bold' },
+        LineNr = { fg = c.purple, bold = true },
         MatchParen = 'Visual',
         ModeMsg = {},
         MoreMsg = 'DiagnosticInfo',
@@ -40,15 +40,15 @@ function load_syntax()
         Search = { fg = c.fg, bg = c.light_green },
         SignColumn = { fg = c.fg, bg = c.bg },
         SpecialKey = 'NonText',
-        SpellBad = { style = 'undercurl', sp = c.light_red },
-        SpellCap = { style = 'undercurl', sp = c.green },
+        SpellBad = { undercurl = true, sp = c.light_red },
+        SpellCap = { undercurl = true, sp = c.green },
         SpellLocal = {},
         SpellRare = {},
         StatusLine = { fg = c.fg, bg = c.gray },
         StatusLineNC = { fg = c.gray, bg = c.gray },
         Substitute = {},
         TabLineFill = c.gray,
-        TabLineSel = { fg = c.fg, bg = c.bg, style = 'bold' },
+        TabLineSel = { fg = c.fg, bg = c.bg, bold = true },
         TabLine = 'StatusLine',
         Title = c.fg,
         VertSplit = 'LineNrAbove',
@@ -77,29 +77,29 @@ function load_syntax()
         Conditional = 'Keyword',
         Repeat = 'Keyword',
         Label = 'Keyword',
-        Operator = { fg = c.light_yellow, style = 'bold' },
-        Keyword = { fg = c.light_yellow, style = 'bold' },
+        Operator = { fg = c.light_yellow, bold = true },
+        Keyword = { fg = c.light_yellow, bold = true },
         Exception = 'Keyword',
-        PreProc = { fg = c.light_red, style = 'bold' },
+        PreProc = { fg = c.light_red, bold = true },
         Include = c.light_red,
         Define = 'PreProc',
         Macro = 'PreProc',
         PreCondit = 'Macro',
-        Type = { fg = c.green, style = 'bold' },
+        Type = { fg = c.green, bold = true },
         StorageClass = 'Type',
         Structure = 'Identifier',
         Typedef = 'Type',
         Special = c.yellow,
         SpecialChar = c.purple,
         Tag = 'Keyword',
-        Delimiter = { fg = c.yellow, style = 'bold' },
+        Delimiter = { fg = c.yellow, bold = true },
         SpecialComment = c.yellow,
         DebugPC = c.cyan,
         DebugBreakpoint = 'DebugPC',
-        Underlined = { fg = c.light_blue, style = 'underline', sp = c.light_blue },
+        Underlined = { fg = c.light_blue, underline = true, sp = c.light_blue },
         Ignore = {},
         Error = 'DiagnosticError',
-        Todo = { fg = c.light_red, bg = c.light_yellow, style = 'bold' },
+        Todo = { fg = c.light_red, bg = c.light_yellow, bold = true },
 
         -- gitsigns
         GitSignsAdd = c.green,
@@ -115,14 +115,14 @@ function load_syntax()
         LspSignatureActiveParameter = 'DiagnosticWarn',
 
         -- Diagnostic
-        DiagnosticVirtualTextError = { fg = c.light_red, style = 'italic' },
-        DiagnosticVirtualTextWarn = { fg = c.yellow, style = 'italic' },
-        DiagnosticVirtualTextInfo = { fg = c.blue, style = 'italic' },
-        DiagnosticVirtualTextHint = { fg = c.green, style = 'italic' },
-        DiagnosticUnderlineError = { sp = c.light_red, style = 'undercurl' },
-        DiagnosticUnderlineWarn = { sp = c.yellow, style = 'undercurl' },
-        DiagnosticUnderlineInfo = { sp = c.blue, style = 'undercurl' },
-        DiagnosticUnderlineHint = { sp = c.green, style = 'undercurl' },
+        DiagnosticVirtualTextError = { fg = c.light_red, italic = true },
+        DiagnosticVirtualTextWarn = { fg = c.yellow, italic = true },
+        DiagnosticVirtualTextInfo = { fg = c.blue, italic = true },
+        DiagnosticVirtualTextHint = { fg = c.green, italic = true },
+        DiagnosticUnderlineError = { sp = c.light_red, undercurl = true },
+        DiagnosticUnderlineWarn = { sp = c.yellow, undercurl = true },
+        DiagnosticUnderlineInfo = { sp = c.blue, undercurl = true },
+        DiagnosticUnderlineHint = { sp = c.green, undercurl = true },
         DiagnosticFloatingError = 'DiagnosticError',
         DiagnosticFloatingWarn = 'DiagnosticWarn',
         DiagnosticFloatingInfo = 'DiagnosticInfo',
@@ -133,10 +133,10 @@ function load_syntax()
         DiagnosticSignHint = 'DiagnosticHint',
 
         -- Cmp
-        CmpItemAbbrDeprecated = { fg = c.light_gray, style='strikethrough' },
-        CmpItemAbbrMatch = { fg = c.light_blue, style='bold' },
+        CmpItemAbbrDeprecated = { fg = c.light_gray, strikethrough = true },
+        CmpItemAbbrMatch = { fg = c.light_blue, bold = true },
         CmpItemAbbrMatchFuzzy = 'CmpItemAbbrMatch',
-        CmpItemMenu = { fg = c.light_gray, style='italic' },
+        CmpItemMenu = { fg = c.light_gray, italic = true },
 
         CmpItemKindField = { fg = c.fg, bg = c.red },
         CmpItemKindProperty = 'CmpItemKindField',
@@ -195,35 +195,15 @@ function colorscheme()
 end
 
 function link(group, color)
-    vim.api.nvim_command('highlight! link '..group..' '..color)
+    vim.api.nvim_set_hl(0, group, { link = color })
 end
 
 function highlight(group, color)
-    local style = 'gui=NONE'
-    local fg = 'guifg=NONE'
-    local bg = 'guibg=NONE'
-    local sp = ''
-
-    if type(color) == "string" then
-        fg = 'guifg=' .. color
-    else
-        if color.style then
-            style = 'gui=' .. color.style
-        end
-        if color.fg then
-            fg = 'guifg=' .. color.fg
-        end
-        if color.bg then
-            bg = 'guibg=' .. color.bg
-        end
-        if color.sp then
-            sp = 'guisp=' .. color.sp
-        end
+    if type(color) == 'string' then
+        color = { fg = color }
     end
 
-    vim.api.nvim_command(
-        'highlight '..group..' '..style..' '..fg..' '..bg..' '..sp
-    )
+    vim.api.nvim_set_hl(0, group, color)
 end
 
 colorscheme()
