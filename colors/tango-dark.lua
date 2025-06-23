@@ -110,6 +110,8 @@ function load_syntax()
 
         htmlH2 = c.light_red,
         htmlH1 = c.light_red,
+
+        mkdHeading = 'htmlH1',
     }
 end
 
