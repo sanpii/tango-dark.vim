@@ -75,7 +75,7 @@ function load_syntax()
         RedrawDebugClear = { bg = c.yellow },
         RedrawDebugComposed = { bg = c.green },
         RedrawDebugRecompose = { bg = c.red },
-        Remove = 'DiffDelete',
+        Removed = 'DiffDelete',
         Search = { fg = c.fg, bg = c.light_green },
         SignColumn = { fg = c.fg, bg = c.bg },
         SpecialChar = c.purple,
