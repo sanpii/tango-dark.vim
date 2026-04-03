@@ -95,7 +95,7 @@ function load_syntax()
         TabLineFill = { bg = c.light_gray },
         TabLineSel = { fg = c.fg, bg = c.bg, bold = true },
         Tag = 'Statement',
-        Title = c.fg,
+        Title = c.light_red,
         Todo = { fg = c.light_red, bg = c.light_yellow, bold = true },
         Type = { fg = c.green, bold = true },
         Underlined = { fg = c.light_blue, underline = true, sp = c.light_blue },
@@ -107,11 +107,6 @@ function load_syntax()
         WildMenu = {},
         WinBar = { bg = c.bg, fg = c.gary},
         WinBarNC = 'WinBar',
-
-        htmlH2 = c.light_red,
-        htmlH1 = c.light_red,
-
-        mkdHeading = 'htmlH1',
     }
 end
 
